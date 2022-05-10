@@ -1,0 +1,32 @@
+{
+  "name": "starter-parcel",
+  "version": "1.0.0",
+  "description": "Starter template with parcel",
+  "main": "index.js",
+  "scripts": {
+    "start": "rm -rf .parcel-cache && rm -rf dist && parcel *.html",
+    "prebuild": "npx rimraf build",
+    "build": "rm -rf build && parcel build *.html --dist-dir ./build --public-url ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:besnikhysaj/starter-parcel.git"
+  },
+  "keywords": [
+    "dengen"
+  ],
+  "author": "Besnik Hysaj, Art Parapani",
+  "license": "ISC",
+  "homepage": "https://github.com/besnikhysaj/starter-parcel#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@popperjs/core": "^2.10.1",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.1.1",
+    "normalize.css": "^8.0.1"
+  }
+}
